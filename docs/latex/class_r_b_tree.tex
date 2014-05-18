@@ -1,0 +1,117 @@
+\hypertarget{class_r_b_tree}{\section{R\+B\+Tree Class Reference}
+\label{class_r_b_tree}\index{R\+B\+Tree@{R\+B\+Tree}}
+}
+
+
+{\ttfamily \#include $<$R\+B\+Tree.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}{R\+B\+Tree} ()
+\item 
+\hyperlink{class_r_b_tree_abab51e54e07c1adf0ca0c9a5d466427b}{$\sim$\+R\+B\+Tree} ()
+\item 
+void \hyperlink{class_r_b_tree_aaef91e62ae3d9336a18e092ba215531c}{add} (int a)
+\item 
+bool \hyperlink{class_r_b_tree_ac1594242c7041276d19e6401a19967b5}{find} (int a)
+\item 
+void \hyperlink{class_r_b_tree_ad97264bea3841ae448837202624cc363}{remove} (int a)
+\item 
+void \hyperlink{class_r_b_tree_a347654f976da557cedc0f3fc9814c1de}{visualize} (string path, string dot)
+\item 
+\hyperlink{class_b_tree}{B\+Tree} \hyperlink{class_r_b_tree_a06ee8feaf9fe98cfad71498a8890c08c}{btree} ()
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+Implementation of Red-\/black trees. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}{\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\index{R\+B\+Tree@{R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{R\+B\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+Tree\+::\+R\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_a19921f34f32f777bb3c4b85d4ff1d9de}
+Empty tree constructor. \hypertarget{class_r_b_tree_abab51e54e07c1adf0ca0c9a5d466427b}{\index{R\+B\+Tree@{R\+B\+Tree}!````~R\+B\+Tree@{$\sim$\+R\+B\+Tree}}
+\index{````~R\+B\+Tree@{$\sim$\+R\+B\+Tree}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{$\sim$\+R\+B\+Tree}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+Tree\+::$\sim$\+R\+B\+Tree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_abab51e54e07c1adf0ca0c9a5d466427b}
+Default destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_b_tree_aaef91e62ae3d9336a18e092ba215531c}{\index{R\+B\+Tree@{R\+B\+Tree}!add@{add}}
+\index{add@{add}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{add}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+Tree\+::add (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_aaef91e62ae3d9336a18e092ba215531c}
+Adds new item into the tree. That is, if the tree doesn't already contain it. 
+\begin{DoxyParams}{Parameters}
+{\em a} & The item to add, positive integer expected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_b_tree_a06ee8feaf9fe98cfad71498a8890c08c}{\index{R\+B\+Tree@{R\+B\+Tree}!btree@{btree}}
+\index{btree@{btree}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{btree}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+Tree} R\+B\+Tree\+::btree (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_a06ee8feaf9fe98cfad71498a8890c08c}
+Constructs a B-\/tree corresponding to the current state of the tree. \begin{DoxyReturn}{Returns}
+Analogical B-\/\+Tree. 
+\end{DoxyReturn}
+\hypertarget{class_r_b_tree_ac1594242c7041276d19e6401a19967b5}{\index{R\+B\+Tree@{R\+B\+Tree}!find@{find}}
+\index{find@{find}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{find}]{\setlength{\rightskip}{0pt plus 5cm}bool R\+B\+Tree\+::find (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_ac1594242c7041276d19e6401a19967b5}
+Searches for item in the tree. 
+\begin{DoxyParams}{Parameters}
+{\em a} & The item to search for, positive integer expected. \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+true if the tree contains a node with value equal to {\ttfamily a}, otherwise false 
+\end{DoxyReturn}
+\hypertarget{class_r_b_tree_ad97264bea3841ae448837202624cc363}{\index{R\+B\+Tree@{R\+B\+Tree}!remove@{remove}}
+\index{remove@{remove}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{remove}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+Tree\+::remove (
+\begin{DoxyParamCaption}
+\item[{int}]{a}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_ad97264bea3841ae448837202624cc363}
+Removes an item from the tree. If the tree doesn't contain this item, nothing happens. 
+\begin{DoxyParams}{Parameters}
+{\em a} & The item to remove, positive integer expected. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_b_tree_a347654f976da557cedc0f3fc9814c1de}{\index{R\+B\+Tree@{R\+B\+Tree}!visualize@{visualize}}
+\index{visualize@{visualize}!R\+B\+Tree@{R\+B\+Tree}}
+\subsubsection[{visualize}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+Tree\+::visualize (
+\begin{DoxyParamCaption}
+\item[{string}]{path, }
+\item[{string}]{dot}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_tree_a347654f976da557cedc0f3fc9814c1de}
+Creates visualization of the current state of the tree using Graphviz. 
+\begin{DoxyParams}{Parameters}
+{\em path} & Where to save the P\+D\+F with visualization. \\
+\hline
+{\em dot} & Path to the Graphviz dot utility. \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Demo/R\+B\+Tree.\+h\item 
+Tree\+Demo/R\+B\+Tree.\+cpp\end{DoxyCompactItemize}

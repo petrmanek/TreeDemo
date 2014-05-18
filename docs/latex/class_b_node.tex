@@ -1,0 +1,91 @@
+\hypertarget{class_b_node}{\section{B\+Node Class Reference}
+\label{class_b_node}\index{B\+Node@{B\+Node}}
+}
+
+
+{\ttfamily \#include $<$B\+Node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\hyperlink{class_b_node_a4c41333d8fc73a6c9f37f77ae7418528}{B\+Node} ()
+\item 
+\hyperlink{class_b_node_a2be9ef05bc8dc34f17982736a38e1adf}{$\sim$\+B\+Node} ()
+\item 
+void \hyperlink{class_b_node_ae9d4520fc66e1b6cf12828124e6ac4ea}{print\+Subtree} (ofstream \&stream)
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+int \hyperlink{class_b_node_a68da613c234fda105be9e77ae198f305}{values} \mbox{[}\hyperlink{class_b_node_a43b413611bf924cac0a30d8e343157a2}{size}\mbox{]}
+\item 
+\hyperlink{class_b_node}{B\+Node} $\ast$ \hyperlink{class_b_node_a4be31193c63fe1a8893a0582b39c2d44}{pointers} \mbox{[}\hyperlink{class_b_node_a43b413611bf924cac0a30d8e343157a2}{size}+1\mbox{]}
+\item 
+string \hyperlink{class_b_node_afaeb8892e5f2b35cfef5f07ba11a36d3}{vizcolors} \mbox{[}\hyperlink{class_b_node_a43b413611bf924cac0a30d8e343157a2}{size}\mbox{]}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const int \hyperlink{class_b_node_a43b413611bf924cac0a30d8e343157a2}{size} = 3
+\item 
+static const int \hyperlink{class_b_node_a85dc0d85a7353df2f327d825481d0406}{empty} = -\/9999
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node of a B-\/tree. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_b_node_a4c41333d8fc73a6c9f37f77ae7418528}{\index{B\+Node@{B\+Node}!B\+Node@{B\+Node}}
+\index{B\+Node@{B\+Node}!B\+Node@{B\+Node}}
+\subsubsection[{B\+Node}]{\setlength{\rightskip}{0pt plus 5cm}B\+Node\+::\+B\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_node_a4c41333d8fc73a6c9f37f77ae7418528}
+Constructs new node with default (empty) values. \hypertarget{class_b_node_a2be9ef05bc8dc34f17982736a38e1adf}{\index{B\+Node@{B\+Node}!````~B\+Node@{$\sim$\+B\+Node}}
+\index{````~B\+Node@{$\sim$\+B\+Node}!B\+Node@{B\+Node}}
+\subsubsection[{$\sim$\+B\+Node}]{\setlength{\rightskip}{0pt plus 5cm}B\+Node\+::$\sim$\+B\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_b_node_a2be9ef05bc8dc34f17982736a38e1adf}
+Recursive post-\/order destructor. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_b_node_ae9d4520fc66e1b6cf12828124e6ac4ea}{\index{B\+Node@{B\+Node}!print\+Subtree@{print\+Subtree}}
+\index{print\+Subtree@{print\+Subtree}!B\+Node@{B\+Node}}
+\subsubsection[{print\+Subtree}]{\setlength{\rightskip}{0pt plus 5cm}void B\+Node\+::print\+Subtree (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{stream}
+\end{DoxyParamCaption}
+)}}\label{class_b_node_ae9d4520fc66e1b6cf12828124e6ac4ea}
+Prints subtree of the node into a Graphviz file. 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Output stream. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_b_node_a85dc0d85a7353df2f327d825481d0406}{\index{B\+Node@{B\+Node}!empty@{empty}}
+\index{empty@{empty}!B\+Node@{B\+Node}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}const int B\+Node\+::empty = -\/9999\hspace{0.3cm}{\ttfamily [static]}}}\label{class_b_node_a85dc0d85a7353df2f327d825481d0406}
+Default value. \hypertarget{class_b_node_a4be31193c63fe1a8893a0582b39c2d44}{\index{B\+Node@{B\+Node}!pointers@{pointers}}
+\index{pointers@{pointers}!B\+Node@{B\+Node}}
+\subsubsection[{pointers}]{\setlength{\rightskip}{0pt plus 5cm}{\bf B\+Node}$\ast$ B\+Node\+::pointers\mbox{[}{\bf size}+1\mbox{]}}}\label{class_b_node_a4be31193c63fe1a8893a0582b39c2d44}
+Pointers to another nodes. \hypertarget{class_b_node_a43b413611bf924cac0a30d8e343157a2}{\index{B\+Node@{B\+Node}!size@{size}}
+\index{size@{size}!B\+Node@{B\+Node}}
+\subsubsection[{size}]{\setlength{\rightskip}{0pt plus 5cm}const int B\+Node\+::size = 3\hspace{0.3cm}{\ttfamily [static]}}}\label{class_b_node_a43b413611bf924cac0a30d8e343157a2}
+Number of cells in the node. \hypertarget{class_b_node_a68da613c234fda105be9e77ae198f305}{\index{B\+Node@{B\+Node}!values@{values}}
+\index{values@{values}!B\+Node@{B\+Node}}
+\subsubsection[{values}]{\setlength{\rightskip}{0pt plus 5cm}int B\+Node\+::values\mbox{[}{\bf size}\mbox{]}}}\label{class_b_node_a68da613c234fda105be9e77ae198f305}
+Values of the node. \hypertarget{class_b_node_afaeb8892e5f2b35cfef5f07ba11a36d3}{\index{B\+Node@{B\+Node}!vizcolors@{vizcolors}}
+\index{vizcolors@{vizcolors}!B\+Node@{B\+Node}}
+\subsubsection[{vizcolors}]{\setlength{\rightskip}{0pt plus 5cm}string B\+Node\+::vizcolors\mbox{[}{\bf size}\mbox{]}}}\label{class_b_node_afaeb8892e5f2b35cfef5f07ba11a36d3}
+Colors of cells in the Graphviz visualization 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Demo/B\+Node.\+h\item 
+Tree\+Demo/B\+Node.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,130 @@
+\hypertarget{class_r_b_node}{\section{R\+B\+Node Class Reference}
+\label{class_r_b_node}\index{R\+B\+Node@{R\+B\+Node}}
+}
+
+
+{\ttfamily \#include $<$R\+B\+Node.\+h$>$}
+
+\subsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \hyperlink{class_r_b_node_a52363d92f3213a390c02dc797fad4669}{print\+Subtree} (ofstream \&stream, \hyperlink{class_r_b_node}{R\+B\+Node} $\ast$nil)
+\item 
+\hyperlink{class_r_b_node_a6c581adb50310ce3794f2e4613ac166c}{R\+B\+Node} ()
+\item 
+\hyperlink{class_r_b_node_a17af235c355263837391ca15addc5cb1}{R\+B\+Node} (\hyperlink{class_r_b_node}{R\+B\+Node} $\ast$nil, \hyperlink{class_r_b_node}{R\+B\+Node} $\ast$\hyperlink{class_r_b_node_a131e0d1a4f73d55e6b5ad282c6846612}{parent}, color\+\_\+t \hyperlink{class_r_b_node_aaa0b3a6a0ddb8fee8295b2a5bf876f07}{color}, int value)
+\item 
+\hyperlink{class_r_b_node_aca1bb7761c39ebd05b9051314df10843}{$\sim$\+R\+B\+Node} ()
+\end{DoxyCompactItemize}
+\subsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\hypertarget{class_r_b_node_a2e225cac48ba29539ae7a9048200bd89}{int {\bfseries value}}\label{class_r_b_node_a2e225cac48ba29539ae7a9048200bd89}
+
+\item 
+color\+\_\+t \hyperlink{class_r_b_node_aaa0b3a6a0ddb8fee8295b2a5bf876f07}{color}
+\item 
+\hyperlink{class_r_b_node}{R\+B\+Node} $\ast$ \hyperlink{class_r_b_node_a3345545f8a1678010bca11b5f7153a4a}{left}
+\item 
+\hyperlink{class_r_b_node}{R\+B\+Node} $\ast$ \hyperlink{class_r_b_node_af82826872827c548a5713eb84f264767}{right}
+\item 
+\hyperlink{class_r_b_node}{R\+B\+Node} $\ast$ \hyperlink{class_r_b_node_a131e0d1a4f73d55e6b5ad282c6846612}{parent}
+\end{DoxyCompactItemize}
+\subsection*{Static Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+static const color\+\_\+t \hyperlink{class_r_b_node_a717168defd1a144e4d3987a52baebce4}{red} = 0
+\item 
+static const color\+\_\+t \hyperlink{class_r_b_node_af06dfc3afd8618bf3c6c352c74ba10fc}{black} = 1
+\item 
+static const int \hyperlink{class_r_b_node_a139c48e69866041cc111cf161e739ec1}{empty} = -\/9999
+\end{DoxyCompactItemize}
+
+
+\subsection{Detailed Description}
+A node of a Red-\/black tree. 
+
+\subsection{Constructor \& Destructor Documentation}
+\hypertarget{class_r_b_node_a6c581adb50310ce3794f2e4613ac166c}{\index{R\+B\+Node@{R\+B\+Node}!R\+B\+Node@{R\+B\+Node}}
+\index{R\+B\+Node@{R\+B\+Node}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{R\+B\+Node}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+Node\+::\+R\+B\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_r_b_node_a6c581adb50310ce3794f2e4613ac166c}
+Constructs new node with default (empty) values. \hypertarget{class_r_b_node_a17af235c355263837391ca15addc5cb1}{\index{R\+B\+Node@{R\+B\+Node}!R\+B\+Node@{R\+B\+Node}}
+\index{R\+B\+Node@{R\+B\+Node}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{R\+B\+Node}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+Node\+::\+R\+B\+Node (
+\begin{DoxyParamCaption}
+\item[{{\bf R\+B\+Node} $\ast$}]{nil, }
+\item[{{\bf R\+B\+Node} $\ast$}]{parent, }
+\item[{color\+\_\+t}]{color, }
+\item[{int}]{value}
+\end{DoxyParamCaption}
+)\hspace{0.3cm}{\ttfamily [inline]}}}\label{class_r_b_node_a17af235c355263837391ca15addc5cb1}
+Constructs new node with preset values. 
+\begin{DoxyParams}{Parameters}
+{\em nil} & Nil node reference, will be set as left and right son. \\
+\hline
+{\em parent} & Reference to the parent node. \\
+\hline
+{\em color} & Color of the node. \\
+\hline
+{\em value} & Value of the node. \\
+\hline
+\end{DoxyParams}
+\hypertarget{class_r_b_node_aca1bb7761c39ebd05b9051314df10843}{\index{R\+B\+Node@{R\+B\+Node}!````~R\+B\+Node@{$\sim$\+R\+B\+Node}}
+\index{````~R\+B\+Node@{$\sim$\+R\+B\+Node}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{$\sim$\+R\+B\+Node}]{\setlength{\rightskip}{0pt plus 5cm}R\+B\+Node\+::$\sim$\+R\+B\+Node (
+\begin{DoxyParamCaption}
+{}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_node_aca1bb7761c39ebd05b9051314df10843}
+Recursive post-\/order destructor, stops at the Nil node. 
+
+\subsection{Member Function Documentation}
+\hypertarget{class_r_b_node_a52363d92f3213a390c02dc797fad4669}{\index{R\+B\+Node@{R\+B\+Node}!print\+Subtree@{print\+Subtree}}
+\index{print\+Subtree@{print\+Subtree}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{print\+Subtree}]{\setlength{\rightskip}{0pt plus 5cm}void R\+B\+Node\+::print\+Subtree (
+\begin{DoxyParamCaption}
+\item[{ofstream \&}]{stream, }
+\item[{{\bf R\+B\+Node} $\ast$}]{nil}
+\end{DoxyParamCaption}
+)}}\label{class_r_b_node_a52363d92f3213a390c02dc797fad4669}
+Prints subtree of the node into a Graphviz file. 
+\begin{DoxyParams}{Parameters}
+{\em stream} & Output stream. \\
+\hline
+{\em nil} & Nil node to omit. \\
+\hline
+\end{DoxyParams}
+
+
+\subsection{Member Data Documentation}
+\hypertarget{class_r_b_node_af06dfc3afd8618bf3c6c352c74ba10fc}{\index{R\+B\+Node@{R\+B\+Node}!black@{black}}
+\index{black@{black}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{black}]{\setlength{\rightskip}{0pt plus 5cm}const color\+\_\+t R\+B\+Node\+::black = 1\hspace{0.3cm}{\ttfamily [static]}}}\label{class_r_b_node_af06dfc3afd8618bf3c6c352c74ba10fc}
+Black color. \hypertarget{class_r_b_node_aaa0b3a6a0ddb8fee8295b2a5bf876f07}{\index{R\+B\+Node@{R\+B\+Node}!color@{color}}
+\index{color@{color}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{color}]{\setlength{\rightskip}{0pt plus 5cm}color\+\_\+t R\+B\+Node\+::color}}\label{class_r_b_node_aaa0b3a6a0ddb8fee8295b2a5bf876f07}
+Color of the node. \hypertarget{class_r_b_node_a139c48e69866041cc111cf161e739ec1}{\index{R\+B\+Node@{R\+B\+Node}!empty@{empty}}
+\index{empty@{empty}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{empty}]{\setlength{\rightskip}{0pt plus 5cm}const int R\+B\+Node\+::empty = -\/9999\hspace{0.3cm}{\ttfamily [static]}}}\label{class_r_b_node_a139c48e69866041cc111cf161e739ec1}
+Default value. \hypertarget{class_r_b_node_a3345545f8a1678010bca11b5f7153a4a}{\index{R\+B\+Node@{R\+B\+Node}!left@{left}}
+\index{left@{left}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{left}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+B\+Node}$\ast$ R\+B\+Node\+::left}}\label{class_r_b_node_a3345545f8a1678010bca11b5f7153a4a}
+Left son of the node. \hypertarget{class_r_b_node_a131e0d1a4f73d55e6b5ad282c6846612}{\index{R\+B\+Node@{R\+B\+Node}!parent@{parent}}
+\index{parent@{parent}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{parent}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+B\+Node}$\ast$ R\+B\+Node\+::parent}}\label{class_r_b_node_a131e0d1a4f73d55e6b5ad282c6846612}
+Parent of the node. \hypertarget{class_r_b_node_a717168defd1a144e4d3987a52baebce4}{\index{R\+B\+Node@{R\+B\+Node}!red@{red}}
+\index{red@{red}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{red}]{\setlength{\rightskip}{0pt plus 5cm}const color\+\_\+t R\+B\+Node\+::red = 0\hspace{0.3cm}{\ttfamily [static]}}}\label{class_r_b_node_a717168defd1a144e4d3987a52baebce4}
+Red color. \hypertarget{class_r_b_node_af82826872827c548a5713eb84f264767}{\index{R\+B\+Node@{R\+B\+Node}!right@{right}}
+\index{right@{right}!R\+B\+Node@{R\+B\+Node}}
+\subsubsection[{right}]{\setlength{\rightskip}{0pt plus 5cm}{\bf R\+B\+Node}$\ast$ R\+B\+Node\+::right}}\label{class_r_b_node_af82826872827c548a5713eb84f264767}
+Right son of the node. 
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+Tree\+Demo/R\+B\+Node.\+h\item 
+Tree\+Demo/R\+B\+Node.\+cpp\end{DoxyCompactItemize}
