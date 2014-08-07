@@ -189,9 +189,15 @@ int main(int argc, const char * argv[])
     cout << "(c) 2014 Petr Mánek, Charles University in Prague." << endl << endl;
     
     // check for dot
-    while (!fexists(dot)) {
-        cout << "Dot not found at \"" << dot << "\". Enter a new path, please: ";
-        getline(cin, dot);
+    // check presence in PATH before you ask
+    if (system("dot -V > /dev/null 2>&1") == 0) {
+        dot = "dot";
+    }
+    else {
+        while (!fexists(dot)) {
+            cout << "Dot not found at \"" << dot << "\". Enter a new path, please: ";
+            getline(cin, dot);
+        }
     }
     
     // initialize interactive mode
