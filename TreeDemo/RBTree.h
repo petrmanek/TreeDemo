@@ -11,6 +11,7 @@
 
 #include <iostream>
 #include <unistd.h>
+#include <string.h>
 #include <fstream>
 #include "RBNode.h"
 #include "BTree.h"
