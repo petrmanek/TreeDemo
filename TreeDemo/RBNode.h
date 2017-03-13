@@ -93,7 +93,7 @@ public:
     /**
      Constructs new node with default (empty) values.
      */
-    RBNode() : identifier(++masterIdentifier), left(nullptr), right(nullptr), parent(nullptr), color(black), value(empty), nil(nullptr) { }
+    RBNode() : identifier(++masterIdentifier), nil(nullptr), value(empty), color(black), left(nullptr), right(nullptr), parent(nullptr) { }
     
     /**
      Constructs new node with preset values.
@@ -106,7 +106,7 @@ public:
      @param value
             Value of the node.
      */
-    RBNode(RBNode *nil, RBNode *parent, color_t color, int value) : identifier(++masterIdentifier), left(nil), right(nil), parent(parent), color(color), value(value), nil(nil) { }
+    RBNode(RBNode *nil, RBNode *parent, color_t color, int value) : identifier(++masterIdentifier), nil(nil), value(value), color(color), left(nil), right(nil), parent(parent) { }
     
     /**
      Recursive post-order destructor, stops at the Nil node.
