@@ -9,7 +9,7 @@
 #
 
 CXX = g++
-CFLAGS = -std=gnu++11 -Wall -fexceptions -O3
+CFLAGS = -std=c++0x -Wall -fexceptions -O3
 LNK_OPTIONS = 
 
 SRCDIR = TreeDemo
